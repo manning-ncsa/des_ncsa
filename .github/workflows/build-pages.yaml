@@ -74,7 +74,7 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           path: ${{ steps.extract.outputs.destination }}
-          name: dist
+          name: github-pages
 
   # Deployment job
   deploy:
