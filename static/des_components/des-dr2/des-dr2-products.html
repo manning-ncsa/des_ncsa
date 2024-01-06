@@ -55,7 +55,7 @@
           <li><a href="javascript:void(0)" on-tap="_coverage">Coverage</a></li>
           <li><a href="javascript:void(0)" on-tap="_filters">DR2 Standard Bandpasses</a></li>
           <li><a href="javascript:void(0)" on-tap="_software">DR2 Software</a></li>
-          <li><a href="http://desdr-server.ncsa.illinois.edu/despublic/dr2_tiles/">DR2 Raw Files (Images and catalogs)</a></li>
+          <li><a href="http://{{drserverbaseurl}}/despublic/dr2_tiles/">DR2 Raw Files (Images and catalogs)</a></li>
         </ul>
         <hr />
         <p><br/></p>
@@ -63,7 +63,7 @@
         <h3 class="fixdown">Introduction  &nbsp; &nbsp; <a style="font-size:0.72rem" href="javascript:void(0)" on-tap="_top">(Top)</a></h3>
         <p>Here we present a summary and description of the individual products included in DES DR2. The primary components of DES DR2 are derived from the union of 10,169 coadd tiles covering the DES footprint. 
           <!--The tile distribution is shown in <a href="javascript:void(0)" on-tap="_dialog" data-item="1"/>Figure 1</a  > and a HEALPix map (NSIDE = 32) of 1753 pixels covering the entire DR2 release is also provided for reference. This map is useful for cross matching sections of the DES footprint with other surveys.--></p>
-        <p>In order to provide a convenient way to download all the catalog data at once, and noting that the tile is the basic processing unit for the survey, we have created FITS file versions of the catalog tables grouped by coadd tile. This amounts to 30,507 total files (for the DR2_MAIN, DR2_MAGNITUDE, and DR2_FLUX tables) with almost 3 TB of catalog data. Both the catalog and corresponding image file paths can be obtained from the DR2_TILE_INFO table  and can be accessed through the interfaces. List of FITS files (images and catalogs) can be obtained from <a href="http://desdr-server.ncsa.illinois.edu/despublic/dr2_tiles/" target="_blank">here</a></p>
+        <p>In order to provide a convenient way to download all the catalog data at once, and noting that the tile is the basic processing unit for the survey, we have created FITS file versions of the catalog tables grouped by coadd tile. This amounts to 30,507 total files (for the DR2_MAIN, DR2_MAGNITUDE, and DR2_FLUX tables) with almost 3 TB of catalog data. Both the catalog and corresponding image file paths can be obtained from the DR2_TILE_INFO table  and can be accessed through the interfaces. List of FITS files (images and catalogs) can be obtained from <a href="http://{{drserverbaseurl}}/despublic/dr2_tiles/" target="_blank">here</a></p>
         <!--   
           <des-img-big  src="{{rootPath}}static/images/dr1/footprint_h32_tiles.png" on-tap="_dialog" data-item="1">
                 Figure 1. DES footprint subdivisions. This figure shows the 10,169 coadd tiles and 1753 HEALPix nside = 32 pixels covered by DR2.
@@ -78,7 +78,7 @@
           Each exposure is roughly 500 MB in size. These images can be accessed through <a href="http://datalab.noirlab.edu/">NOIRLab Astro Data Lab</a>.</p>
         <p><b>b)</b> <u>Coadd Images</u>: As a result of the Multi-Epoch Pipeline described in <a href="[[rootPath]]releases/dr2/dr2-docs/processing">Data Processing</a>, a total of 10,169 tiles of 10k x 10k pixels spanning 0.7306deg on a side at a resolution of 0.263 arcsec/pixel were produced in each of the 5 bands. For each tile, DESDM created a background-subtracted image for each filter which are the based for the source catalogs and one without background subtraction for each band as ancillary data.
           
-        These 10 images per band along with the <em>r + i + z</em> combined detection image used are <a href='http://desdr-server.ncsa.illinois.edu/despublic/dr2_tiles/' target="_blank"> publicly available </a> for a total of 111,859 images constituting ~20 TB of data.</p>
+        These 10 images per band along with the <em>r + i + z</em> combined detection image used are <a href='http://{{drserverbaseurl}}/despublic/dr2_tiles/' target="_blank"> publicly available </a> for a total of 111,859 images constituting ~20 TB of data.</p>
 
 
         <p><br/></p>
@@ -222,7 +222,7 @@
       These maps are then translated into high-resolution Healpix maps, where the value of each pixel represents the fraction of the pixel area that is covered by DES DR2.
       The coverage fraction ranges from 0 to 1, where a value of 1 indicates that the pixel has complete, unmasked coverage. <br><br>
 
-      Files can be found <a href="http://desdr-server.ncsa.illinois.edu/despublic/dr2_tiles/Coverage_DR2/" target="_blank">here</a> <br><br>
+      Files can be found <a href="http://{{drserverbaseurl}}/despublic/dr2_tiles/Coverage_DR2/" target="_blank">here</a> <br><br>
 
       An example of a g-band coadded image on the border of the footprint and the associated coverage fraction map is shown in Figure 1. 
       The map captures the lack of DES observations, as well as areas that are masked due to bright stars and other imaging artifacts.

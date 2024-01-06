@@ -18,7 +18,7 @@
 
       <div style="text-align: center">
 
-          <a style="padding: 20px; text-decoration: none" href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/" target="_blank"><paper-button   raised  class="desButton">Files</paper-button></a>
+          <a style="padding: 20px; text-decoration: none" href="http://{{drserverbaseurl}}/despublic/y1a1_files/" target="_blank"><paper-button   raised  class="desButton">Files</paper-button></a>
               <paper-button   raised  class="desButton" on-click="_scroll"> Data Summary</paper-button>
           <a style="padding: 20px; text-decoration: none" href="[[rootPath]]help"><paper-button   raised class="desButton">Help</paper-button></a>
       </div>
@@ -67,7 +67,7 @@
         <strong>Data Access</strong>
       </h2>
       <p>The full listing of downloadable files can be found <strong>
-          <a href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/">here</a>
+          <a href="http://{{drserverbaseurl}}/despublic/y1a1_files/">here</a>
         </strong>.</p>
       <p>The data products are described in more detail on the pages linked above and files are linked by topic below. Catalog files are distributed as gzipped <a href="http://fits.gsfc.nasa.gov/fits_documentation.html">FITS</a> binary tables. Ancillary depth maps, survey condition maps, and footprint masks are provided as <a href="http://healpix.jpl.nasa.gov/">HEALPix</a> formatted gzipped binary FITS tables.</p>
       <p>
@@ -104,7 +104,7 @@
                 <a href="[[rootPath]]releases/y1a1/gold">Y1A1 Gold Data</a>
             </td>
             <td>
-              <a href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/gold_catalogs/">Link</a>
+              <a href="http://{{drserverbaseurl}}/despublic/y1a1_files/gold_catalogs/">Link</a>
             </td>
             <td>
               <a href="http://adsabs.harvard.edu/abs/2018ApJS..235...33D">Drlica-Wagner et al. (2018)</a>
@@ -117,7 +117,7 @@
                  <a href="[[rootPath]]releases/y1a1/gold/morphology">Morphological Catalogs</a>
             </td>
             <td>
-              <a href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/morph_catalogs/">Link</a>
+              <a href="http://{{drserverbaseurl}}/despublic/y1a1_files/morph_catalogs/">Link</a>
             </td>
             <td>
               <a href="http://adsabs.harvard.edu/doi/10.1093/mnras/sty1970">Tarsitano et al. (2018)</a>
@@ -130,7 +130,7 @@
                 <a href="[[rootPath]]releases/y1a1/gold/classification">Star-Galaxy Separation</a>
             </td>
             <td>
-              <a href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/sgsep_catalogs/">Link</a>
+              <a href="http://{{drserverbaseurl}}/despublic/y1a1_files/sgsep_catalogs/">Link</a>
             </td>
             <td>
               <a href="http://adsabs.harvard.edu/abs/2018arXiv180502427S">Sevilla-Noarbe et al. (2018)</a>
@@ -143,7 +143,7 @@
               <a href="[[rootPath]]releases/y1a1/gold/footprint">Footprint/Depth</a>
             </td>
             <td colspan="1">
-              <a href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/masks_maps/">Link</a>
+              <a href="http://{{drserverbaseurl}}/despublic/y1a1_files/masks_maps/">Link</a>
             </td>
             <td colspan="1">
               <a href="http://adsabs.harvard.edu/abs/2018ApJS..235...33D">Drlica-Wagner et al. (2018)</a>
@@ -156,7 +156,7 @@
                 <a href="[[rootPath]]releases/y1a1/gold/systematics">Observing Conditions</a>
             </td>
             <td colspan="1">
-              <a href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/systematic_maps/">Link</a>
+              <a href="http://{{drserverbaseurl}}/despublic/y1a1_files/systematic_maps/">Link</a>
             </td>
             <td colspan="1">
               <a href="http://adsabs.harvard.edu/abs/2018ApJS..235...33D">Drlica-Wagner et al. (2018)</a>
@@ -186,7 +186,7 @@
               <a href="[[rootPath]]releases/y1a1/key-catalogs/key-mof">Link</a>
             </td>
             <td colspan="1">
-              <a href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/mof_catalogs">Link</a>
+              <a href="http://{{drserverbaseurl}}/despublic/y1a1_files/mof_catalogs">Link</a>
             </td>
             <td colspan="1">
               <a href="http://adsabs.harvard.edu/abs/2018ApJS..235...33D">Drlica-Wagner et al. (2018)</a>
@@ -199,7 +199,7 @@
               <a href="[[rootPath]]releases/y1a1/key-catalogs/key-shape">Link</a>
             </td>
             <td colspan="1">
-              <a href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/shear_catalogs/">Link</a>
+              <a href="http://{{drserverbaseurl}}/despublic/y1a1_files/shear_catalogs/">Link</a>
             </td>
             <td colspan="1">
               <a href="http://adsabs.harvard.edu/abs/2018MNRAS.tmp.2129Z">Zuntz &amp; Sheldon et al. (2018)</a>
@@ -212,7 +212,7 @@
               <a href="[[rootPath]]releases/y1a1/key-catalogs/key-psf">Link</a>
             </td>
             <td colspan="1">
-              <a href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/psf_catalogs/">Link</a>
+              <a href="http://{{drserverbaseurl}}/despublic/y1a1_files/psf_catalogs/">Link</a>
             </td>
             <td colspan="1">
               <a href="http://adsabs.harvard.edu/abs/2018MNRAS.tmp.2129Z">Zuntz &amp; Sheldon et al. (2018)</a>
@@ -234,7 +234,7 @@
               <a href="[[rootPath]]releases/y1a1/key-catalogs/key-redmagic">Link</a>
             </td>
             <td colspan="1">
-              <a href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/redmagic/">Link</a>
+              <a href="http://{{drserverbaseurl}}/despublic/y1a1_files/redmagic/">Link</a>
             </td>
             <td colspan="1">
               <a href="http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1708.01536">Elvin-Poole et al. (2018)</a>
@@ -244,7 +244,7 @@
             <td colspan="1">Y1KP catalogs</td>
             <td colspan="1">Photometric Redshift Catalog</td>
             <td colspan="1"><a href="[[rootPath]]releases/y1a1/key-catalogs/key-photoz">Link</a></td>
-            <td colspan="1"><a href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/photoz_catalogs/">Link</a></td>
+            <td colspan="1"><a href="http://{{drserverbaseurl}}/despublic/y1a1_files/photoz_catalogs/">Link</a></td>
             <td colspan="1">
               <a href="http://adsabs.harvard.edu/abs/2018MNRAS.478..592H">Hoyle &amp; Gruen et al. (2018)</a>
             </td>
@@ -270,7 +270,7 @@
             <td colspan="1">Y1A1 Key Project</td>
             <td colspan="1">Data Vectors</td>
             <td colspan="1"><a href="[[rootPath]]releases/y1a1/key-products">Link</a></td>
-            <td colspan="1"><a href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/chains/2pt_NG_mcal_1110.fits">Link</a></td>
+            <td colspan="1"><a href="http://{{drserverbaseurl}}/despublic/y1a1_files/chains/2pt_NG_mcal_1110.fits">Link</a></td>
             <td colspan="1">
               <a href="http://adsabs.harvard.edu/abs/2017arXiv170801530D">DES Collaboration (2018)</a>
             </td>
@@ -282,7 +282,7 @@
               <a href="[[rootPath]]releases/y1a1/key-products">Link</a>
             </td>
             <td colspan="1">
-              <a href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/redshift_bins/">Link</a>
+              <a href="http://{{drserverbaseurl}}/despublic/y1a1_files/redshift_bins/">Link</a>
             </td>
             <td colspan="1">
               <a href="http://adsabs.harvard.edu/abs/2017arXiv170801530D">DES Collaboration (2018)</a>
@@ -295,7 +295,7 @@
               <a href="[[rootPath]]releases/y1a1/key-products">Link</a>
             </td>
             <td colspan="1">
-              <a href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/chains/">Link</a>
+              <a href="http://{{drserverbaseurl}}/despublic/y1a1_files/chains/">Link</a>
             </td>
             <td colspan="1">
               <a href="http://adsabs.harvard.edu/abs/2017arXiv170801530D">DES Collaboration (2018)</a>
@@ -308,7 +308,7 @@
               <a href="[[rootPath]]releases/y1a1/key-products">Link</a>
             </td>
             <td colspan="1">
-              <a href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/mass_maps/">Link</a>
+              <a href="http://{{drserverbaseurl}}/despublic/y1a1_files/mass_maps/">Link</a>
             </td>
             <td colspan="1">
               <a href="http://adsabs.harvard.edu/abs/2018MNRAS.475.3165C">Chang et al. (2018)</a>
@@ -338,7 +338,7 @@
               <a href="[[rootPath]]releases/y1a1/bao">Link</a>
             </td>
             <td colspan="1">
-              <a href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/baosample/">Link</a>
+              <a href="http://{{drserverbaseurl}}/despublic/y1a1_files/baosample/">Link</a>
             </td>
             <td colspan="1">
               <a href="https://arxiv.org/abs/1712.06211">Crocce et al. (2018)</a>
@@ -351,7 +351,7 @@
               <a href="[[rootPath]]releases/y1a1/bao">Link</a>
             </td>
             <td colspan="1">
-              <a href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/baosample/mainBAOpaper/DES_Y1A1_LSSBAO_likelihood.dat">Link</a>
+              <a href="http://{{drserverbaseurl}}/despublic/y1a1_files/baosample/mainBAOpaper/DES_Y1A1_LSSBAO_likelihood.dat">Link</a>
             </td>
             <td colspan="1">
               <a href="http://adsabs.harvard.edu/abs/2017arXiv171206209T">DES Collaboration (2017)</a>
@@ -364,7 +364,7 @@
               <a href="[[rootPath]]releases/y1a1/bao">Link</a>
             </td>
             <td colspan="1">
-              <a href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/baosample/mainBAOpaper/">Link</a>
+              <a href="http://{{drserverbaseurl}}/despublic/y1a1_files/baosample/mainBAOpaper/">Link</a>
             </td>
             <td colspan="1">
               <a href="http://adsabs.harvard.edu/abs/2017arXiv171206209T">DES Collaboration (2017)</a>
@@ -386,7 +386,7 @@
               <a href="[[rootPath]]releases/y1a1/bao">Link</a>
             </td>
             <td colspan="1">
-              <a href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/baosample/xir/">Link</a>
+              <a href="http://{{drserverbaseurl}}/despublic/y1a1_files/baosample/xir/">Link</a>
             </td>
             <td colspan="1">
               <a href="http://adsabs.harvard.edu/abs/2017arXiv171206209T">DES Collaboration (2017)</a>
@@ -399,7 +399,7 @@
               <a href="[[rootPath]]releases/y1a1/bao">Link</a>
             </td>
             <td colspan="1">
-              <a href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/mock_catalogs/">Link</a>
+              <a href="http://{{drserverbaseurl}}/despublic/y1a1_files/mock_catalogs/">Link</a>
             </td>
             <td colspan="1">
               <a href="https://academic.oup.com/mnras/article-abstract/479/1/94/5017483">Avila et al. (2018)</a>
@@ -429,7 +429,7 @@
               <a href="[[rootPath]]releases/y1a1/density">Link</a>
             </td>
             <td colspan="1">
-              <a href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/density_stats/data_des_20_allbins_metacal_y1.tab">Link</a>
+              <a href="http://{{drserverbaseurl}}/despublic/y1a1_files/density_stats/data_des_20_allbins_metacal_y1.tab">Link</a>
             </td>
             <td colspan="1">
               <a href="https://arxiv.org/abs/1710.05045">Gruen et al. (2018)</a>
@@ -468,7 +468,7 @@
               <a href="[[rootPath]]releases/y1a1/density">Link</a>
             </td>
             <td colspan="1">
-              <a href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/density_stats/">Link</a>
+              <a href="http://{{drserverbaseurl}}/despublic/y1a1_files/density_stats/">Link</a>
             </td>
             <td colspan="1">
               <a href="https://arxiv.org/abs/1710.05045">Gruen et al. (2018)</a>
