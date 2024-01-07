@@ -13,8 +13,6 @@ from global_vars import log
 
 define("port", default=8080, help="run on the given port", type=int)
 
-BASE_URL = os.environ['BASE_URL']
-
 class BaseHandler(tornado.web.RequestHandler):
     def get_current_user(self):
         return self.get_secure_cookie("user")
@@ -56,7 +54,7 @@ class Application(tornado.web.Application):
             ]
         settings = {
             "template_path":Settings.TEMPLATE_PATH,
-            "debug":Settings.DEBUG,
+            "debug":Settings.DEBUG_ENABLED,
             "default_handler_class": My404Handler,
         }
         tornado.web.Application.__init__(self, handlers, **settings)
