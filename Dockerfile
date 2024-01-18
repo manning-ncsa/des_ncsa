@@ -4,8 +4,6 @@ RUN npm install -g vulcanize@1.16.0
 WORKDIR /opt
 COPY --chown=des:des ./ ./
 
-ARG DRSERVER=desdr-server.ncsa.illinois.edu
-RUN find static/des_components -type f -exec sed -i "s/{{drserverbaseurl}}/${DRSERVER}/g" {} \;
 
 RUN vulcanize static/des_components/elements.html \
     --exclude static/bower_components/polymer/lib/legacy/ \
@@ -23,4 +21,4 @@ RUN pip install --no-cache-dir jsmin
 ## Copy source files
 COPY --from=build /opt/ ./
 
-CMD [ "python", "main.py" ]
+CMD [ "bash", "start.sh" ]
