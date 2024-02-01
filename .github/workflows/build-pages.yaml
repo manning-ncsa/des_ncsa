@@ -3,7 +3,8 @@ name: build-pages
 on:
   push:
     branches:
-      - 'github-pages'
+      # - 'github-pages'
+      - 'DISABLED'
     paths:
     - '**'
     - '.github/workflows/build-pages.yaml'
