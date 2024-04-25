@@ -56,7 +56,7 @@
     class DesDr1NCSA extends Polymer.Element {
       static get is() { return 'des-dr1-ncsa'; }
       _goncsa() {
-          var win = window.open('/desaccess/', '_blank');
+          var win = window.open('https://des.ncsa.illinois.edu/desaccess/', '_blank');
           win.focus();
       }
       _top() {this.$.ncsa_top.scrollIntoView();}
