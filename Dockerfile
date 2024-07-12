@@ -14,6 +14,9 @@ FROM python:3.9
 COPY requirements.txt ./requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
+RUN useradd --create-home --shell /bin/bash des --uid 1000
+WORKDIR /home/des/
+
 ## Copy source files
 COPY --from=build /opt/ ./
 
