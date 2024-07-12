@@ -761,8 +761,9 @@
         super.ready();
         let pageHierarchy = window.location.pathname.substr(window.location.pathname.search(this.rootPath)+1).split('/');
         for (let pg in pageHierarchy) {
-          if (this.shadowRoot.querySelector('a[name='+pageHierarchy[pg]+']') !== null) {
-            console.log('clicking page')
+          // console.log(`pageHierarchy[pg]: ${pageHierarchy[pg]}`)
+          if (pageHierarchy[pg].length > 0 && this.shadowRoot.querySelector('a[name='+pageHierarchy[pg]+']') !== null) {
+            // console.log('clicking page')
             this.shadowRoot.querySelector('a[name='+pageHierarchy[pg]+']').click();
           }
         }
@@ -814,7 +815,7 @@
         this.page = page || 'home';
         //this.subpage = (function () { return; })()  ;
         //this.subrouteData.subpage = (function () { return; })()  ;
-        console.log('page:' + page);
+        // console.log('page:' + page);
         // Close a non-persistent drawer when the page & route are changed.
         //if (!this.$.drawer.persistent &&  drawerLayout.not([narrow]))  {
           //this.$.drawer.close();
@@ -825,7 +826,7 @@
         this.routeData.page = subpage;
         //this.subpage = (function () { return; })()  ;
         //this.subrouteData.subpage = (function () { return; })()  ;
-        console.log('subpage:' + subpage);
+        // console.log('subpage:' + subpage);
         // Close a non-persistent drawer when the page & route are changed.
         //if (!this.$.drawer.persistent) {
           //this.$.drawer.close();
@@ -837,7 +838,7 @@
         this.subrouteData.subpage = subpage1;
         //this.subpage = (function () { return; })()  ;
         //this.subrouteData.subpage = (function () { return; })()  ;
-        console.log('subpage1:' + subpage1);
+        // console.log('subpage1:' + subpage1);
         // Close a non-persistent drawer when the page & route are changed.
         //if (!this.$.drawer.persistent ) {
           //this.$.drawer.close();
@@ -850,7 +851,7 @@
         this.subrouteData1.subpage1 = subpage2;
         //this.subpage = (function () { return; })()  ;
         //this.subrouteData.subpage = (function () { return; })()  ;
-        console.log('subpage2:' + subpage2);
+        // console.log('subpage2:' + subpage2);
         // Close a non-persistent drawer when the page & route are changed.
         // if (!this.$.drawer.persistent) {
           //this.$.drawer.close();
