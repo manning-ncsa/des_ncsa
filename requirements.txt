@@ -1,0 +1,6 @@
+jira
+netaddr
+bcrypt
+pyyaml
+tornado==5.0.1
+jsmin

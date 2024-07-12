@@ -1,6 +1,11 @@
 """ Settings for app"""
 import os
-DEBUG_ENABLED = os.environ.get('DEBUG_ENABLED', 'False').lower() == "true"
+
+DEBUG_ENABLED = os.getenv('DEBUG_ENABLED', "false").lower() == "true"
+if DEBUG_ENABLED:
+    INDEX_FILE = 'index.dev.html'
+else:
+    INDEX_FILE = 'index.html'
 DIRNAME = os.path.dirname(__file__)
 APP_ROOT = os.environ.get('APP_ROOT', '')
 if APP_ROOT.strip('/') != '':
