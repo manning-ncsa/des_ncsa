@@ -43,8 +43,7 @@ Workflow for contributing content updates
       -p 8080:8080 \
       -v $(pwd):/home/des \
       -u $(id -u) \
-      desdm-public:dev \
-      python3 main.py
+      desdm-public:dev
     ```
 
     Once again adding the flag ``--platform linux/x86_64`` on MacOS
