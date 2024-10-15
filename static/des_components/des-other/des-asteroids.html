@@ -1,0 +1,131 @@
+<dom-module id="des-asteroids">
+
+<template>
+
+    <style include="shared-styles">
+
+</style>
+
+
+    <des-card heading ="The Dark Energy Survey - individual measurements of asteroids">
+        <div style="text-align: center">
+    <a style="padding: 20px; text-decoration: none" href="https://cloud.musesframework.io/s/SAr2JAQfdj8q4AJ"><paper-button   raised class="desButton">Files</paper-button></a>
+</div>
+      <div class="card-content">
+        <h2>
+  <strong>Overview</strong>
+</h2>
+<p>
+These data were obtained in the context of the paper
+<a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.527.6495C/abstract"> Main belt asteroids taxonomical
+information from dark energy survey data Carruba, V. et al. 2024- MNRAS</a>. Please, add
+it to your references if you use them in your work.</p>
+
+<p>
+Once the tarballs are inflated, individual files with the asteroid names are available.
+Their content is:
+
+<p>
+<span style="letter-spacing: 0.0px;"> Once the tarballs are inflated, individual files with the asteroid names are available.
+Each file contains the following </span>
+        <span style="letter-spacing: 0.0px;">columns :</span>
+      </p>
+      <table >
+        <colgroup>
+          <col />
+          <col />
+        </colgroup>
+        <tbody>
+          <tr>
+            <th>Column Number</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>DES minus ephemeris position in right ascension (DeltaAlphaCosDelta in arcsec)</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>DES minus ephemeris position in declination (DeltaDelta in arcsec)</td>
+          </tr>
+          <tr>
+            <td>3-5</td>
+            <td>(ICRS) DES right ascension (sexagesimal, HH:MM:SS.SSSS)</td>
+          </tr>
+          <tr>
+            <td>6-8</td>
+            <td>(ICRS) DES declination (sexagesimal, +/-DEG:MM:SS.SSS)</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>JD at mid observation time (UTC)</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>DES filter</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>DES magnitude</td>
+          </tr>   
+          <tr>
+            <td>12</td>
+            <td>Uncertainty in DES magnitude</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Phase angle (deg) (not a DES data)</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Object's distance to the heliocenter (AU) (not a DES data)</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Object's distance to the observer (AU) (not a DES data)</td>
+          </tr>     
+        </tbody>
+      </table>
+
+
+
+Note: The ephemeris positions are from the JPL. Their versions
+are those from the time the file with the above pieces of information
+was built.
+</p>
+ 
+<p><strong> Reference: <a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.527.6495C/abstract"> Carruba, V. et al. (2024)</a></strong></p>
+
+<p><strong> Files:</p>
+<p><a href="https://cloud.musesframework.io/s/SAr2JAQfdj8q4AJ/download?path=%2F&files=hungaria.tar.gz" target="_blank">Hungaria</a></p>
+<p><a href="https://cloud.musesframework.io/s/SAr2JAQfdj8q4AJ/download?path=%2F&files=mb_inner.tar.gz" target="_blank">Main Belt - Inner</a> </p>
+<p><a href="https://cloud.musesframework.io/s/SAr2JAQfdj8q4AJ/download?path=%2F&files=mb_middle.tar.gz" target="_blank">Main Belt - Middle</a> </p>
+<p><a href="https://cloud.musesframework.io/s/SAr2JAQfdj8q4AJ/download?path=%2F&files=mb_outer.tar.gz" target="_blank">Main Belt - Outer</a> </p>
+<p><a href="https://cloud.musesframework.io/s/SAr2JAQfdj8q4AJ/download?path=%2F&files=mb_cybelle.tar.gz" target="_blank">Cybelle</a> </p>
+<p><a href="https://cloud.musesframework.io/s/SAr2JAQfdj8q4AJ/download?path=%2F&files=mb_hilda.tar.gz" target="_blank">Hilda</a> </p>
+<p><a href="https://cloud.musesframework.io/s/SAr2JAQfdj8q4AJ/download?path=%2F&files=trojan.tar.gz" target="_blank">Trojan</a> </p>
+  <br/>
+</p>
+        <hr/>
+
+
+
+      </div>
+      </des-card>
+
+
+</template>
+<script>
+    class DesOtherAsteroids extends Polymer.Element {
+      static get is() { return 'des-asteroids'; }
+      _scroll(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          var temp = e.target.dataset.item;
+          this.shadowRoot.querySelector('#standards'+temp).scrollIntoView();
+          }
+    }
+    window.customElements.define(DesOtherAsteroids.is, DesOtherAsteroids);
+  </script>
+
+</dom-module>
