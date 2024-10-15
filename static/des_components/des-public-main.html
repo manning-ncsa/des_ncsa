@@ -294,7 +294,7 @@
 
                   <app-submenu no-auto-close>
                 <div class="app-menu-item" slot="submenu-trigger">
-                  <a class="app-menu-item" id="needindent" name="file-content" href="http://desdr-server.ncsa.illinois.edu/despublic/y1a1_files/" target="_blank">Files</a>
+                  <a class="app-menu-item" id="needindent" name="file-content" href="http://{{drserverbaseurl}}/despublic/y1a1_files/" target="_blank">Files</a>
                 </div>
                 </app-submenu>
 
@@ -397,7 +397,7 @@
              
                   <!--app-submenu no-auto-close>
                 <div class="app-menu-item" slot="submenu-trigger">
-                  <a class="app-menu-item" id="needindent" name="y3a2_files" href="http://desdr-server.ncsa.illinois.edu/despublic/y3a2_files" target="_blank">Files</a>
+                  <a class="app-menu-item" id="needindent" name="y3a2_files" href="http://{{drserverbaseurl}}/despublic/y3a2_files" target="_blank">Files</a>
                 </div>
                 </app-submenu-->
 
@@ -417,7 +417,7 @@
 
                   <app-submenu no-auto-close>
                 <div class="app-menu-item" slot="submenu-trigger">
-                  <a class="app-menu-item" id="needindent" name="file-content" href="http://desdr-server.ncsa.illinois.edu/despublic/sn_files/y3" target="_blank">Files</a>
+                  <a class="app-menu-item" id="needindent" name="file-content" href="http://{{drserverbaseurl}}/despublic/sn_files/y3" target="_blank">Files</a>
                 </div>
                 </app-submenu>
 
@@ -524,97 +524,106 @@
 
 
                 </app-menu>
-               </app-submenu no-auto-close>
-
+              </app-submenu no-auto-close>
               <!-- OTHERS -->
               <app-submenu no-auto-close>
                 <div class="sublist1" slot="submenu-trigger">
-                <a class="app-menu-item" name="other" href="[[rootPath]]releases/other">Other<iron-icon icon="expand-more"></iron-icon></a>
+                  <a class="app-menu-item" name="other" href="[[rootPath]]releases/other">Other<iron-icon
+                      icon="expand-more"></iron-icon></a>
                 </div>
 
                 <app-menu class="sublist2" slot="submenu-content">
 
 
                   <app-submenu no-auto-close>
-                <div class="app-menu-item" slot="submenu-trigger">
-                  <a class="app-menu-item" id="needindent" name="paper-data" href="[[rootPath]]releases/other/paper-data">Ancillary paper data</a>
-                </div>
-                </app-submenu>
-                  
-                  <app-submenu no-auto-close>
-                <div class="app-menu-item" slot="submenu-trigger">
-                  <a class="app-menu-item" id="needindent" name="instrumental-throughputs" href="[[rootPath]]releases/other/instrumental-throughputs">Instrumental Throughputs</a>
-                </div>
-                </app-submenu>
-                
-		<app-submenu no-auto-close>
-                <div class="app-menu-item" slot="submenu-trigger">
-                  <a class="app-menu-item" id="needindent" name="y1-dmass" href="[[rootPath]]releases/other/y1-dmass" >Y1 DMASS</a>
-                </div>
-                </app-submenu>
+                    <div class="app-menu-item" slot="submenu-trigger">
+                      <a class="app-menu-item" id="needindent" name="paper-data"
+                        href="[[rootPath]]releases/other/paper-data">Ancillary paper data</a>
+                    </div>
+                  </app-submenu>
 
                   <app-submenu no-auto-close>
-                <div class="app-menu-item" slot="submenu-trigger">
-                  <a class="app-menu-item" id="needindent" name="y3-rrl" href="[[rootPath]]releases/other/y3-rrl" >Y3 RR Lyrae</a>
-                </div>
-                </app-submenu>
+                    <div class="app-menu-item" slot="submenu-trigger">
+                      <a class="app-menu-item" id="needindent" name="asteroids"
+                        href="[[rootPath]]releases/other/asteroids">Asteroids</a>
+                    </div>
+                  </app-submenu>
 
                   <app-submenu no-auto-close>
-                <div class="app-menu-item" slot="submenu-trigger">
-                  <a class="app-menu-item" id="needindent" name="y3-mlt" href="[[rootPath]]releases/other/y3-mlt">Y3 LT,M dwarfs</a>
-                </div>
-                </app-submenu>
+                    <div class="app-menu-item" slot="submenu-trigger">
+                      <a class="app-menu-item" id="needindent" name="instrumental-throughputs"
+                        href="[[rootPath]]releases/other/instrumental-throughputs">Instrumental Throughputs</a>
+                    </div>
+                  </app-submenu>
+
+                  <app-submenu no-auto-close>
+                    <div class="app-menu-item" slot="submenu-trigger">
+                      <a class="app-menu-item" id="needindent" name="y1-dmass" href="[[rootPath]]releases/other/y1-dmass">Y1 DMASS</a>
+                    </div>
+                  </app-submenu>
+
+                  <app-submenu no-auto-close>
+                    <div class="app-menu-item" slot="submenu-trigger">
+                      <a class="app-menu-item" id="needindent" name="y3-rrl" href="[[rootPath]]releases/other/y3-rrl">Y3 RR Lyrae</a>
+                    </div>
+                  </app-submenu>
+
+                  <app-submenu no-auto-close>
+                    <div class="app-menu-item" slot="submenu-trigger">
+                      <a class="app-menu-item" id="needindent" name="y3-mlt" href="[[rootPath]]releases/other/y3-mlt">Y3 LT,M
+                        dwarfs</a>
+                    </div>
+                  </app-submenu>
 
 
 
                   <app-submenu no-auto-close>
-                <div class="app-menu-item" slot="submenu-trigger">
-                  <a class="app-menu-item" id="needindent" name="y3-lt-widebinaries" href="[[rootPath]]releases/other/y3-lt-widebinaries">Y3 LT WideBinaries</a>
-                </div>
-                </app-submenu>
-                
-                   <app-submenu no-auto-close>
-                <div class="app-menu-item" slot="submenu-trigger">
-                  <a class="app-menu-item" id="needindent" name="y3-morphCNN" href="[[rootPath]]releases/other/y3-morphCNN">Y3 MorphCNN</a>
-                </div>
-                </app-submenu>
+                    <div class="app-menu-item" slot="submenu-trigger">
+                      <a class="app-menu-item" id="needindent" name="y3-lt-widebinaries"
+                        href="[[rootPath]]releases/other/y3-lt-widebinaries">Y3 LT WideBinaries</a>
+                    </div>
+                  </app-submenu>
 
-               
-                <app-submenu no-auto-close>
-                <div class="app-menu-item" slot="submenu-trigger">
-                  <a class="app-menu-item" id="needindent" name="y3-lsbg" href="[[rootPath]]releases/other/y3-lsbg">Y3 LSBG</a>
-                </div>
-                </app-submenu>
+                  <app-submenu no-auto-close>
+                    <div class="app-menu-item" slot="submenu-trigger">
+                      <a class="app-menu-item" id="needindent" name="y3-morphCNN" href="[[rootPath]]releases/other/y3-morphCNN">Y3
+                        MorphCNN</a>
+                    </div>
+                  </app-submenu>
 
-                 <app-submenu no-auto-close>
-                <div class="app-menu-item" slot="submenu-trigger">
-                  <a class="app-menu-item" id="needindent" name="quadruply-qso-method" href="[[rootPath]]releases/other/quadruply-qso-method">Lensed QSOs</a>
-                </div>
-                </app-submenu>
-               
-                <app-submenu no-auto-close>
-                <div class="app-menu-item" slot="submenu-trigger">
-                  <a class="app-menu-item" id="needindent" name="y6-rrl" href="[[rootPath]]releases/other/y6-rrl" >Y6 RR Lyrae</a>
-                </div>
-                </app-submenu>
-                
-		<app-submenu no-auto-close>
-                <div class="app-menu-item" slot="submenu-trigger">
-                  <a class="app-menu-item" id="needindent" name="Y6-LTdwarfs" href="[[rootPath]]releases/other/Y6-LTdwarfs" >Y6 LT,M dwarfs</a>
-                </div>
-                </app-submenu>
 
-                <app-submenu no-auto-close>
-                <div class="app-menu-item" slot="submenu-trigger">
-                  <a class="app-menu-item" id="needindent" name="Y6-standards" href="[[rootPath]]releases/other/Y6-standards" >Y6 Standard Stars</a>
-                </div>
-                </app-submenu>
+                  <app-submenu no-auto-close>
+                    <div class="app-menu-item" slot="submenu-trigger">
+                      <a class="app-menu-item" id="needindent" name="y3-lsbg" href="[[rootPath]]releases/other/y3-lsbg">Y3 LSBG</a>
+                    </div>
+                  </app-submenu>
 
-                <app-submenu no-auto-close>
-                <div class="app-menu-item" slot="submenu-trigger">
-                  <a class="app-menu-item" id="needindent" name="asteroids" href="[[rootPath]]releases/other/asteroids" >Asteroids</a>
-                </div>
-                </app-submenu>
+                  <app-submenu no-auto-close>
+                    <div class="app-menu-item" slot="submenu-trigger">
+                      <a class="app-menu-item" id="needindent" name="quadruply-qso-method"
+                        href="[[rootPath]]releases/other/quadruply-qso-method">Lensed QSOs</a>
+                    </div>
+                  </app-submenu>
+
+                  <app-submenu no-auto-close>
+                    <div class="app-menu-item" slot="submenu-trigger">
+                      <a class="app-menu-item" id="needindent" name="y6-rrl" href="[[rootPath]]releases/other/y6-rrl">Y6 RR Lyrae</a>
+                    </div>
+                  </app-submenu>
+
+                  <app-submenu no-auto-close>
+                    <div class="app-menu-item" slot="submenu-trigger">
+                      <a class="app-menu-item" id="needindent" name="Y6-LTdwarfs" href="[[rootPath]]releases/other/Y6-LTdwarfs">Y6
+                        LT,M dwarfs</a>
+                    </div>
+                  </app-submenu>
+
+                  <app-submenu no-auto-close>
+                    <div class="app-menu-item" slot="submenu-trigger">
+                      <a class="app-menu-item" id="needindent" name="Y6-standards" href="[[rootPath]]releases/other/Y6-standards">Y6
+                        Standard Stars</a>
+                    </div>
+                  </app-submenu>
 
                 </app-menu>
 
